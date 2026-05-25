@@ -1,7 +1,179 @@
-<html>
-  <body>
-    <p>This is a test page</p>
-    <p><a href="page1.html">Επίσκεψη στην Σελίδα 1</a></p>
-    <p><a href="page2.html">Επίσκεψη στην Σελίδα 2</a></p>
-  </body>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>villafourtuna - Home</title>
+    <style>
+        /* Βασικές ρυθμίσεις εμφάνισης */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Μενού Πλοήγησης */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        /* Κύριο Περιεχόμενο */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .highlight-box {
+            background-color: #eef7f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Φόρμα Επικοινωνίας */
+        form {
+            background: #f2f4f4;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #219653;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Μενού Πλοήγησης -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page1.html">Description</a>
+        <a href="page2.html">Gallery</a>
+        <a href="page3.html">Location</a>
+        <a href="page4.html">Contact</a>
+    </nav>
+
+    <!-- Κύριο Περιεχόμενο Σελίδας -->
+    <div class="container">
+        <h1>villafourtuna</h1>
+        <hr>
+        
+        <h2>Home</h2>
+        
+        <p>Located 10 mi from Corfutown city/airport and 40 m from the beach, is a building complex with fully equipped apartments.</p>
+        
+        <p>Amphitheatrically built, offers panoramic view to the sea.</p>
+        
+        <div class="highlight-box">
+            <strong>Apartment Amenities:</strong>
+            <ul>
+                <li>Free air conditioning</li>
+                <li>TV & Wi-Fi</li>
+                <li>Private bathroom</li>
+                <li>Kitchenware & fridge</li>
+                <li>Furnished balcony with views to the sea or to the beautiful green garden</li>
+            </ul>
+        </div>
+
+        <p>There is also free private car parking and the bus stop is just in front of the building.</p>
+        
+        <p>At a distance of 200 – 300m there are restaurants, super market, bar, cafeterias and tourist shops.</p>
+        
+        <p>See also: <a href="https://wordpress.com" target="_blank">villafourtuna on WordPress</a></p>
+
+        <!-- Φόρμα Επικοινωνίας -->
+        <h2>Φόρμα επικοινωνίας</h2>
+        <form action="https://formspree.io" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Simple theme. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
 </html>
